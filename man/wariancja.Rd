@@ -8,10 +8,10 @@ Miara rozrzutu zmiennej losowej. Pi = 1/n
 wariancja(proba)
 }
 \value{
-\deqn{VX = (EX^2)^2 - (EX)^2}
-\item{{VX}}{wariancja}
-\item{EX^2}{moment II rzedu}
-\item{EX}{moment I rzedu, czyli wartosc oczekiwana}
+\deqn{VX = \frac{(X_i^2)}{n} - \bar{X}^2}
+\item{VX}{wariancja}
+\item{X_i}{obserwacja}
+\item{X}{srednia arytmetyczna}
 }
 \examples{
 wariancja(proba=c(2,5,8)) zwraca X=5
