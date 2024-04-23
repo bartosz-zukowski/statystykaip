@@ -2,7 +2,7 @@ Package: statystykaip
 Type: Package
 Title: Statystyka z elementami logiki dla Informatyki Przemyslowej UP Lublin.
 Description: Funkcje pomocnicze do rozwiazywania zadan ze statystyki.
-Version: 0.0.3
+Version: 0.0.4
 Authors@R: person("Bartosz", "Zukowski", email="bz.bartosz.zukowski@gmail.com", role=c("aut", "cre"))
 License: MIT + file LICENSE
 Suggests: 
