@@ -1,22 +1,28 @@
 \name{wsp_asymetrii_Aq}
 \alias{wsp_asymetrii_Aq}
-\title{Współczynnik asymetrii Aq}
-\description{Oblicza wartość współczynnika asymetrii dla danej próby według wzoru 
-Aq = (Q3 - Q2) - (Q2 - Q1). Kwartyle obliczane według:
-Q1 = kwantyl_rzedu(proba, 0.25), Q3 = kwantyl_rzedu(proba, 0.75) 
-Zalecane: sprawdź funkcję kwantyl_rzedu(proba, rzad).
+\title{
+  Oblicza współczynnik asymetrii kwartylowej dla danego rozkładu prawdopodobieństwa.
 }
-              
 \usage{
-wsp_asymetrii_Aq(proba)
+  wsp_asymetrii_Aq(proba, na.rm = TRUE)
 }
-
 \value{
 Aq = (Q3 - Q2) - (Q2 - Q1)
 }
-
-\examples{
-wsp_asymetrii_Aq(proba=c(6,4,3,4,2,8)) zwraca Aq=1
+\arguments{
+  \item{proba}{
+    Wektor numeryczny reprezentujący rozkład prawdopodobieństwa.
+  }
+  \item{na.rm}{
+    Logiczna flaga określająca, czy należy usunąć brakujące wartości z wektora wejściowego.
+    Domyślnie \code{TRUE}.
+  }
 }
-
-\author{Bartosz Zukowski}
+\description{
+  Funkcja oblicza współczynnik asymetrii kwartylowej dla danego rozkładu prawdopodobieństwa.
+  Współczynnik ten mierzy asymetrię rozkładu w oparciu o różnicę między kwantylami rzędu 0.75
+  a 0.5 oraz między kwantylami rzędu 0.5 a 0.25.
+}
+\examples{
+  wsp_asymetrii_Aq(proba=c(6,4,3,4,2,8)) zwraca Aq=1
+}
