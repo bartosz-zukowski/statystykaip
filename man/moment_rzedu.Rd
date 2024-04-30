@@ -1,5 +1,5 @@
-\name{wsp_asymetrii_Aq}
-\alias{wsp_asymetrii_Aq}
+\name{Moment rzędu EX^k}
+\alias{Moment rzędu EX^k}
 \title{Moment rzędu EX^k}
 \description{Oblicza wartość momentu rzędu k dla próby dla której każda obserwacja
 jest tak samo prawdopodobna Pi = 1/liczebność próby (Wartość oczekiwana moment_rzedu(proba, 1)).
